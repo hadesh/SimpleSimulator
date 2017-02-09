@@ -75,6 +75,20 @@
 
 - (IBAction)actionOpen:(id)sender
 {
+    [self openCurrenApplication];
+}
+
+- (IBAction)actionAppDoubleClick:(id)sender
+{
+    [self openCurrenApplication];
+}
+- (IBAction)actionDeviceDoubleClick:(id)sender
+{
+    [self openCurrenDevice];
+}
+
+- (void)openCurrenApplication
+{
     if (self.selectedSimulator == nil)
     {
         return;
@@ -90,6 +104,15 @@
     }
     
     [SSItemManager openFileAtPath:path];
+}
+
+- (void)openCurrenDevice
+{
+    if (self.selectedSimulator == nil)
+    {
+        return;
+    }
+    [SSItemManager openFileAtPath:self.selectedSimulator.devicePath];
 }
 
 #pragma mark - OUTLINE VIEW DELEGATE & DATASOURCE

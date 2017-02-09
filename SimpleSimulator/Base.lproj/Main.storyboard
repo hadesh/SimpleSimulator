@@ -704,24 +704,24 @@
                                 <rect key="frame" x="0.0" y="0.0" width="555" height="403"/>
                                 <subviews>
                                     <customView fixedFrame="YES" id="LS2-x1-ZH4" userLabel="Left View">
-                                        <rect key="frame" x="0.0" y="0.0" width="218" height="403"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="217" height="403"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lh-UO-iNe">
-                                                <rect key="frame" x="0.0" y="0.0" width="219" height="403"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="218" height="403"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="g7f-ki-N8p">
-                                                    <rect key="frame" x="1" y="1" width="217" height="401"/>
+                                                    <rect key="frame" x="1" y="1" width="216" height="401"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" outlineTableColumn="7OY-Zy-mEj" id="RaC-la-cEe">
-                                                            <rect key="frame" x="0.0" y="0.0" width="217" height="401"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="216" height="401"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <size key="intercellSpacing" width="3" height="2"/>
                                                             <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                             <tableColumns>
-                                                                <tableColumn width="213.5" minWidth="16" maxWidth="1000" id="7OY-Zy-mEj">
+                                                                <tableColumn width="213" minWidth="16" maxWidth="1000" id="7OY-Zy-mEj">
                                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                                         <font key="font" metaFont="smallSystem"/>
                                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -735,7 +735,7 @@
                                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                     <prototypeCellViews>
                                                                         <tableCellView identifier="HeaderCell" id="Okw-Xe-YVa">
-                                                                            <rect key="frame" x="1" y="1" width="214" height="17"/>
+                                                                            <rect key="frame" x="1" y="1" width="213" height="17"/>
                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                             <subviews>
                                                                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="css-di-OgG">
@@ -757,7 +757,7 @@
                                                                             </connections>
                                                                         </tableCellView>
                                                                         <tableCellView identifier="DataCell" id="dIR-QE-Ael">
-                                                                            <rect key="frame" x="1" y="20" width="214" height="17"/>
+                                                                            <rect key="frame" x="1" y="20" width="213" height="17"/>
                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                             <subviews>
                                                                                 <imageView translatesAutoresizingMaskIntoConstraints="NO" id="VaW-fD-3ky">
@@ -768,7 +768,7 @@
                                                                                     <imageCell key="cell" refusesFirstResponder="YES" imageScaling="proportionallyDown" image="NSActionTemplate" id="pQL-QV-IJw"/>
                                                                                 </imageView>
                                                                                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="byq-wc-oTg">
-                                                                                    <rect key="frame" x="25" y="0.0" width="189" height="17"/>
+                                                                                    <rect key="frame" x="25" y="0.0" width="188" height="17"/>
                                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="rH4-tY-s2K">
                                                                                         <font key="font" metaFont="system"/>
                                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -793,6 +793,7 @@
                                                                 </tableColumn>
                                                             </tableColumns>
                                                             <connections>
+                                                                <action trigger="doubleAction" selector="actionDeviceDoubleClick:" target="XfG-lQ-9wD" id="N69-FB-jPM"/>
                                                                 <outlet property="dataSource" destination="XfG-lQ-9wD" id="Zda-ZC-FCN"/>
                                                                 <outlet property="delegate" destination="XfG-lQ-9wD" id="wn9-ey-V1Z"/>
                                                             </connections>
@@ -801,18 +802,18 @@
                                                     <nil key="backgroundColor"/>
                                                 </clipView>
                                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="CxR-5z-Tl3">
-                                                    <rect key="frame" x="1" y="379" width="216" height="15"/>
+                                                    <rect key="frame" x="-7" y="-14" width="0.0" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </scroller>
                                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="7Yu-mN-fC9">
-                                                    <rect key="frame" x="-14" y="1" width="15" height="0.0"/>
+                                                    <rect key="frame" x="-14" y="-7" width="15" height="0.0"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </scroller>
                                             </scrollView>
                                         </subviews>
                                     </customView>
                                     <customView fixedFrame="YES" id="ryt-Vg-Syk" userLabel="Right View">
-                                        <rect key="frame" x="227" y="0.0" width="329" height="403"/>
+                                        <rect key="frame" x="226" y="0.0" width="329" height="403"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bs-dC-BY3">
@@ -901,6 +902,7 @@
                                                                 </tableColumn>
                                                             </tableColumns>
                                                             <connections>
+                                                                <action trigger="doubleAction" selector="actionAppDoubleClick:" target="XfG-lQ-9wD" id="Qb8-XO-UM3"/>
                                                                 <outlet property="dataSource" destination="XfG-lQ-9wD" id="BML-i0-3tO"/>
                                                                 <outlet property="delegate" destination="XfG-lQ-9wD" id="xiM-Lc-ipg"/>
                                                             </connections>
