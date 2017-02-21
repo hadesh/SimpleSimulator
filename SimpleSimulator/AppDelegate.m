@@ -23,5 +23,16 @@
     // Insert code here to tear down your application
 }
 
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag
+{
+    if (flag) {
+        return YES;
+    }
+    else
+    {
+        [[NSApplication sharedApplication].windows.firstObject makeKeyAndOrderFront:self];// Window that you want open while click on dock app icon
+        return NO;
+    }
+}
 
 @end

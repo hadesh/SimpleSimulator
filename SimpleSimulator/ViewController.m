@@ -67,7 +67,7 @@
 
 - (IBAction)actionRefresh:(id)sender
 {
-    self.allSimulators = [SSItemManager allSimulators];
+    self.allSimulators = nil;
     self.selectedSimulator = nil;
     [self.deviceSourceView reloadData];
     [self.appSourceView reloadData];
