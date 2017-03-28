@@ -98,7 +98,7 @@
     
     NSString *path = self.selectedSimulator.devicePath;
     
-    if (selectedAppIndex > 0) {
+    if (selectedAppIndex >= 0) {
         SSApplication *app = [self.selectedSimulator.applications objectAtIndex:selectedAppIndex];
         path = app.applicationDataPath ?: app.applicationBundlePath;
     }
